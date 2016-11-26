@@ -1,0 +1,5 @@
+int attr scale_view_height 0x7f010000
+int attr scale_view_margin 0x7f010001
+int attr scale_view_max 0x7f010002
+int attr scale_view_min 0x7f010003
+int string app_name 0x7f020000

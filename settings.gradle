@@ -1,0 +1,1 @@
+include ':app', ':mnvideoplayerlibrary', ':scaleview', ':social_sdk_library_project', ':multiple-images-selector'

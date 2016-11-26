@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backGround"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:id="@+id/item_activityimage"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPlayerBlackTrans"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/item_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="26sp"
+            android:textColor="#eee"
+            android:text="这是标题"/>
+        <TextView
+            android:id="@+id/item_Num"
+            android:layout_below="@id/item_Title"
+            android:layout_alignParentRight="true"
+            android:layout_margin="25dp"
+            android:textColor="#eee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是点击次数"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:alpha="0.97"
+    tools:context="com.weiaibenpao.demo.chislim.ui.UpdatePassActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.97"
+        android:background="@color/backGround">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/backWord"
+            android:text="修改密码"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/oldPass"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/backWord"
+                android:textColorHint="@color/backHint"
+                android:hint="原始密码"/>
+
+            <View
+                android:layout_below="@id/oldPass"
+                android:layout_width="match_parent"
+                android:layout_marginTop="-10dp"
+                android:layout_height="1dp"
+                android:background="@color/backLine"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/newPass"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/backWord"
+                android:textColorHint="@color/backHint"
+                android:hint="新密码"/>
+            <View
+                android:layout_below="@id/newPass"
+                android:layout_width="match_parent"
+                android:layout_marginTop="-10dp"
+                android:layout_height="1dp"
+                android:background="@color/backLine"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/newPassTwo"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/backWord"
+                android:textColorHint="@color/backHint"
+                android:hint="确认密码"/>
+            <View
+                android:layout_below="@id/newPassTwo"
+                android:layout_width="match_parent"
+                android:layout_marginTop="-10dp"
+                android:layout_height="1dp"
+                android:background="@color/backLine"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/updatePass"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/carinfobutton"
+            android:textColor="@color/backWord"
+            android:textSize="18sp"
+            android:text="修改密码"/>
+    </LinearLayout>
+
+</RelativeLayout>

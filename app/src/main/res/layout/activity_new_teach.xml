@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.weiaibenpao.demo.chislim.ui.TravelInfoActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sFresh"
+        android:layout_below="@+id/myScrollView"
+        android:background="@color/backView"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/teachRecycler"
+            android:background="@color/backView"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <View
+            android:id="@+id/myBar"
+            android:layout_width="match_parent"
+            android:background="@color/backView"
+            android:alpha="0"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/backWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:id="@+id/difClasslayout"
+            android:layout_below="@id/banner"
+            android:background="@color/backWord"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/difClass"
+                android:background="@color/backWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/myImage"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/difClasslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/healthTeach"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/myImage"
+            android:background="@color/backLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/talkLayout"
+            android:layout_below="@+id/healthTeach"
+            android:background="@color/backWord"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/backGround"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="话题"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/backGround"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="我和品牌的故事"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/talkView"
+                android:background="@color/backWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/talkLayout"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:background="@color/backWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:textColor="@color/backGround"
+                android:text="近期精选话题"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activityView"
+                android:background="@color/backWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
